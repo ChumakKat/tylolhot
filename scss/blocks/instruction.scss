@@ -1,0 +1,411 @@
+/* INSTRUCTION */
+.instruction {
+    position: relative;
+    text-align: center;
+
+    &-page {
+        margin-top: 100px;
+
+        @include breakpoint ($desktop-bp-992) {
+            margin-top: 70px;
+         }
+
+        @include breakpoint ($tablets-bp-768) {
+            margin-top: 40px;
+         }
+        @include breakpoint ($mobile-bp-576) {
+            margin-top: 30px;
+         }
+    }
+}
+
+.inst__btn-block {
+    position: relative;
+    top: -73px;
+    z-index: 4;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover .inst__btn-border {
+        transform: scale(1.35);
+    }
+
+    &:hover .inst__btn-border_two {
+        transform: scale(1.7);
+    } 
+
+    @include breakpoint ($tablets-bp-768) {
+       display: none;
+    }
+
+    &.btn__noactive {
+        display: none;
+    }
+}
+
+.inst__btn {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    border: 2px solid $orange-header;
+    border-radius: 50px;
+    background: url('../img/arrow.svg')  no-repeat center;
+    background-position: center;
+    z-index: 1;
+}
+
+.inst__btn-border {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-left: -24px;
+   margin-top: -24px;
+   z-index: 0;
+   opacity: .3;
+
+    width: 48px;
+    height:48px;
+    border: 2px solid $orange-header;
+    border-radius: 50px;
+    
+    transition: transform .3s linear ;
+}
+
+.inst__btn-border_two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+    z-index: 0;
+    opacity: .3;
+ 
+    width: 48px;
+    height:48px;
+    border: 2px solid $orange-header;
+    border-radius: 50px;
+     
+    transition: transform .5s linear ;
+}
+
+.inst__title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 25px;
+        margin-top: 65px;
+    }
+}
+
+/* PLAN */
+.plan {
+    position: relative;
+    z-index: 2;
+    margin-top: 70px;
+    margin-bottom: 115px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-y: hidden;
+
+    @include breakpoint ($desktop-bp-992) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+      margin: 50px 0 80px;
+    }
+
+    @include breakpoint ($mobile-bp-576){
+        grid-template-columns: 1fr;
+        margin-bottom: 60px;
+    }
+}
+
+.plan__item {
+    text-align: center;
+}
+
+.plan__text {
+    margin: 10px auto 0;
+    font-size: 15px;
+    max-width: 150px;
+}
+
+/* SHEET, CIRCLE */
+.inst-img__circle-left {
+    width: 760px;
+    position: absolute;
+    bottom: -300px;
+    left: -530px;
+    z-index: 0;
+
+    @include breakpoint ($desktop-bp-992) {
+        bottom: -200px;  
+        left: -570px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        display: none;
+    } 
+}
+
+.inst-img__circle-right {
+    width: 597px;
+    position: absolute;
+    bottom: 0;
+    right: -400px;
+    z-index: 0;
+
+    @include breakpoint ($desktop-bp-992) {
+        bottom: 200px;   
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        bottom: 500px;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+        bottom: 1000px;
+        right: -500px;
+    }
+}
+
+.inst-img__sheet-left {
+    position: absolute;
+    bottom: 150px;
+    left:-165px;
+    z-index: 0;
+
+    @include breakpoint ($desktop-bp-992) {
+        left:-130px;
+        bottom: 300px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        left:-200px;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+        left:-150px;
+        bottom: 550px;
+    }
+}
+
+.inst-img__sheet-right {
+    position: absolute;
+    bottom: 300px;
+    right:70px;
+    z-index: 0;
+
+    @include breakpoint ($desktop-bp-992) {
+        bottom: 430px; 
+        right:-50px; 
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        top:-940px;
+        right:200px;
+     }
+
+     @include breakpoint ($mobile-bp-576) {
+        right:100px;
+    }
+
+    &-classic {
+        @include breakpoint ($tablets-bp-768) {
+            top:-1060px;
+         }
+        @include breakpoint ($mobile-bp-371) {
+            top:-1120px;
+         }
+    }
+
+    &-d {
+        @include breakpoint ($tablets-bp-768) {
+            top:-1300px;
+         }
+        @include breakpoint ($mobile-bp-576) {
+            top:-1250px;
+         }
+
+        @include breakpoint ($mobile-bp-371) {
+            top:-1360px;
+         }
+    }
+
+    &-useful {
+        display: none;
+
+        @include breakpoint ($desktop-bp-992) {
+           display: block;
+         }
+         @include breakpoint ($tablets-bp-768) {
+            top:-40px;
+            right:170px;
+         }
+    }
+}
+
+.inst-img__lemon {
+    position: absolute;
+    bottom: 30px;
+    right:-380px;
+    z-index: 0;
+
+    @include breakpoint ($desktop-bp-992) {
+        display: none;
+    }
+}
+
+.inst-img__girl {
+    position: absolute;
+    bottom: -115px;
+    right: -100px;
+    z-index: 10;
+
+    @include breakpoint ($desktop-bp-1200) {
+        width: 300px;
+    }
+    @include breakpoint ($desktop-bp-992) {
+        display: none;
+    }
+}
+
+.inst-img__lemon-mob {
+    display: none;
+
+    @include breakpoint ($mobile-bp-576) {
+        display: block;
+        position: absolute;
+        bottom: -40px;
+        right: -130px;
+        z-index: 0;
+    }
+
+    @include breakpoint ($mobile-bp-371) {
+        right: -100px;
+    }
+}
+
+.inst-img__orange-mob {
+    display: none;
+
+    @include breakpoint ($mobile-bp-576) {
+        display: block;
+        position: absolute;
+        top: 370px;
+        right: -130px;
+        z-index: 0;
+    }
+
+    @include breakpoint ($mobile-bp-371) {
+        right: -100px;
+    }
+}
+
+/* PROPERTIES */
+.properties {
+    position: relative;
+    z-index: 2;
+    margin-top: 80px;
+    margin-bottom: 115px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 60px;
+    
+
+    @include breakpoint ($desktop-bp-992) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 80px;
+        margin-bottom: 100px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        margin-bottom: 70px;
+    }
+
+    @include breakpoint ($mobile-bp-576){
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+        margin-bottom: 60px;
+    }
+
+    &-kids {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       max-width: 845px;
+
+       & .properties__item  {
+        width: 240px;
+       }
+    }
+}
+
+.properties__item {
+    position: relative;
+
+    text-align: center;
+    background-color: $white;
+    height: 112px;
+    padding-top: 47px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #e2e2e2;
+
+    &-kids {
+        margin-top: 80px;
+
+        @include breakpoint ($desktop-bp-992) {
+            margin-top: 0;
+        }
+    }
+}
+
+.properties__img {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+
+    width: 89px;
+    height: 89px;
+    background: linear-gradient(to top, #16B7E3, #53D6FA, transparent);
+    border-radius: 50px;
+    border: 6px solid $white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-d {
+        background: linear-gradient(to top, #FF951A, #FFC24A);
+    }
+    &-kids {
+        background: linear-gradient(to top, #FF97B1);
+    }
+}
+
+.plan__text {
+    margin: 10px auto 0;
+    font-size: 15px;
+    max-width: 150px;
+}
+
+.properties__text {
+    display: inline-block;
+    padding: 0 25px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.2;
+}

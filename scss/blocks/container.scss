@@ -1,0 +1,30 @@
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1155px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @include breakpoint ($desktop-bp-1200) {
+        width: 990px;
+        padding: 0 25px;
+    }
+
+    @include breakpoint ($desktop-bp-992) {
+        max-width: 720px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        max-width: 520px;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+        max-width: 370px;
+    }
+
+    @include breakpoint ($mobile-bp-371) {
+        max-width: 300px;
+        padding: 0 10px;
+    }
+}
+

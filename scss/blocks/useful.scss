@@ -1,0 +1,448 @@
+/* USEFUL */
+.useful {
+    margin-bottom: 40px;
+
+    @include breakpoint ($mobile-bp-576) {
+        margin-top: 20px;
+    }
+}
+.useful__box-one {
+    position: relative;
+    width: 50%;
+    margin-bottom: 50px;
+
+    @include breakpoint ($desktop-bp-992) {
+        width: 100%;
+        margin-bottom: 20px;
+    }   
+}
+
+.useful__title {
+    @include breakpoint ($mobile-bp-576) {
+        width: 280px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.useful__title-wrapper {
+@include breakpoint ($mobile-bp-576) {
+      text-align: center;
+    }
+}
+
+.useful__subtitle {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+
+    @include breakpoint ($tablets-bp-768) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+.useful-info__title {
+    font-size: 38px;
+    font-weight: 700;
+    color: $red;
+    margin-bottom: 5px;
+
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 32px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 28px;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+.useful-info__text {
+    font-size: 25px;
+    line-height: 1.6;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+    & span {
+        color: $red;
+    }
+
+    @include breakpoint ($desktop-bp-992) {
+        margin-bottom: 550px;
+        font-size: 22px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 20px;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 18px;
+        margin-bottom: 345px;
+        text-align: center;
+    }
+
+    @include breakpoint ($mobile-bp-371) {
+        margin-bottom: 280px;
+    }
+}
+
+.useful-info__subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    line-height: 1.8;
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.useful-list {
+     @include breakpoint ($tablets-bp-768) {
+        width: auto;
+    }
+}
+
+.list__item {
+    display: flex;
+    align-items: flex-start; 
+}
+
+.list__item-icon {
+    margin-top: 7px;
+
+    @include breakpoint ($mobile-bp-576) {
+        margin-top: 5px;
+      }
+}
+
+.useful-info__item {
+    line-height: 1.8;
+}
+
+.useful__img {
+    position:absolute;
+    top: 45px;
+    left: 580px;
+    z-index: 1;
+    width: 680px;
+
+    @include breakpoint ($desktop-bp-1200) {
+        width: 550px;
+        top: 85px;
+        left: 500px;
+    }
+
+    @include breakpoint ($desktop-bp-992) {
+        top: 345px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+
+    @include breakpoint ($mobile-bp-576) {
+        width: 100%;
+        top: 390px;
+      }
+
+      @include breakpoint ($mobile-bp-371) {
+        top: 405px;
+    }
+}
+
+.useful__box-two {
+    display: flex;
+
+    @include breakpoint ($desktop-bp-992) {
+        flex-direction: column;
+      }
+}
+
+.box {
+    width: 50%;
+
+    @include breakpoint ($desktop-bp-992) {
+      width: 100%;
+    }
+   
+}
+
+.box__left {
+    line-height: 1.8;
+}
+
+.box__list{
+    color: $list;
+    font-style: italic;
+    list-style: disc;
+    padding-left: 20px;
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 15px;
+      }
+}
+
+.box__right {
+    line-height: 1.8;
+    padding-left: 90px;
+
+    @include breakpoint ($desktop-bp-992) {
+        padding-left: 0;
+      }
+}
+
+.box__text {
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 15px;
+      }
+}
+
+/* OTHERNESS*/
+.otherness__block{
+    padding: 75px 0;
+    position: relative;
+
+    @include breakpoint ($desktop-bp-992) {
+        padding: 60px 0;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        padding: 50px 0;
+    }
+}
+
+.otherness__title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 60px;
+
+     @include breakpoint ($desktop-bp-992) {
+        text-align: center;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+    @include breakpoint ($mobile-bp-576)    {
+        font-size: 25px;
+    }
+}
+
+.otherness_head {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    @include breakpoint ($tablets-bp-768) {
+        display: none;
+     }
+}
+
+.head__sign {
+    width: 35%;
+}
+
+.head__items {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+}
+
+.head__item {
+    width: 100%;
+    text-align: center;
+}
+
+.otherness_info {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: normal;
+
+    @include breakpoint ($tablets-bp-768) {
+        flex-direction: column;
+        margin: 75px 0 50px;
+     }
+
+     &:first-child {
+        @include breakpoint ($tablets-bp-768) {
+            margin: 0 0 50px;
+         }   
+    }
+}
+
+.info__sign {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint ($desktop-bp-992) {
+        margin-top: 40px;
+        margin: 0 auto;
+      }
+
+      @include breakpoint ($tablets-bp-768) {
+        width: 100%;
+     }
+}
+
+.info__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 89px;
+    height: 89px;
+    background: linear-gradient(to top, #FF951A 80%, #FFC24A);
+    border: 5px solid $white;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.info__sign-name {
+    background-color: $white;
+    height: 43px;
+    padding-left: 54px;
+    width: 254px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 43px;
+    z-index: 0;
+
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+
+    @include breakpoint ($desktop-bp-992) {
+        height: 60px;
+        padding-right: 70px;
+        flex-wrap: wrap;
+       }
+
+       @include breakpoint ($tablets-bp-768) {
+        width: 100%;
+        left: 0;
+        height: 43px;
+        justify-content: center;
+        padding-right: 89px;
+        padding-left: 89px;
+        text-align: center;
+     }
+}
+
+.sign__subtitle {
+    display: none;
+
+    @include breakpoint ($tablets-bp-768) {
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 5;
+
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+     }
+}
+
+.info__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+
+    @include breakpoint ($tablets-bp-768) {
+        width: 100%;
+        flex-direction: column;
+     }
+}
+
+.info__item {
+    width: 100%;
+    text-align: center;
+   
+    @include breakpoint ($tablets-bp-768) {
+        margin-top: 20px;
+     }
+}
+
+.info__text {
+    background-color: $white;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+
+    position: relative;
+    z-index: 5;
+
+    @include breakpoint ($desktop-bp-992) {
+      padding: 0 12px;
+      height: 60px;
+     }
+
+     @include breakpoint ($tablets-bp-768) {
+        height: 43px;
+        border-radius: 50px;
+        padding: 0 30px;
+     }
+
+    &-left {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+
+        @include breakpoint ($tablets-bp-768) {
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+         }
+    }
+
+    &-right {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+
+        @include breakpoint ($tablets-bp-768) {
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+         }
+    }
+}
+
+.info__subtitle {
+    display: none; 
+
+    @include breakpoint ($tablets-bp-768) {
+        display: block;
+
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+     }
+}

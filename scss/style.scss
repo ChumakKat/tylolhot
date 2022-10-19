@@ -1,0 +1,46 @@
+@import "vars";
+@import "mixins";
+
+html, body {
+   font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background: $background;
+}
+
+body {
+    &.body-fix {
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p, span, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* Blocks */
+@import "blocks/main";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/instruction";
+@import "blocks/about";
+@import "blocks/video";
+@import "blocks/useful";
